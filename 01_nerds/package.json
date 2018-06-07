@@ -1,27 +1,33 @@
 {
-  "name": "nerds",
+  "name": "html-project",
   "version": "1.0.0",
   "private": true,
-  "description": "Личный проект от HTML Academy - Nerds",
+  "description": "Личный проект от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
+    "css-mqpacker": "^6.0.2",
     "csso": "^3.5.0",
-    "gulp": "^3.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-html-minifier": "^0.1.8",
     "gulp-imagemin": "^4.1.0",
     "gulp-less": "3.5.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-svgo": "^1.5.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
+    "remove-svg-properties": "^0.3.3",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -30,8 +36,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "build": "gulp",
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
@@ -50,7 +56,6 @@
     "node": "8.11"
   },
   "dependencies": {
-    "gulp-html-minifier": "^0.1.8",
     "normalize.css": "^8.0.0",
     "pump": "^3.0.0"
   }
