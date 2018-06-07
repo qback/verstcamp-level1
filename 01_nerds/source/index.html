@@ -15,13 +15,177 @@
     <include src="build/img/sprite.svg"></include>
   </div> -->
   <header class="main-header">
-
+    <a class="main-logo" href="index.html">
+      <svg>
+        <use></use>
+      </svg>
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--state_active"><a>Студия</a></li>
+        <li class="main-nav__item"><a href="javascript:void(0);">Клиенты</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Магазин</a></li>
+        <li class="main-nav__item"><a href="javascript:void(0);">Контакты</a></li>
+      </ul>
+      <a class="main-nav__basket" href="javascript:void(0);">
+        <svg class="main-nav__basket-icon" width="15" height="15">
+          <use></use>
+        </svg>
+        <span class="main-nav__basket-txt">Корзина</span>
+      </a>
+    </nav>
   </header>
   <main class="main-page">
-
+    <h1 class="visually-hidden">О студии</h1>
+    <section class="promo-slider">
+      <h2 class="visually-hidden">Наши фишки</h2>
+      <ul class="promo-slider__list">
+        <li class="promo-slider__item">
+          <b>Долго, дорого, скрупулезно.</b>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="catalog.html">Узнать больше</a>
+        </li>
+        <li class="promo-slider__item">
+          <b>Любим математику как никто другой</b>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a href="catalog.html">Узнать больше</a>
+        </li>
+        <li class="promo-slider__item">
+          <b>Только ночь, только хардкор</b>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="catalog.html">Узнать больше</a>
+        </li>
+      </ul>
+      <div class="promo-slider__control">
+        <button class="promo-slider__control-item" type="button"><span class="visually-hidden">Показать слайд 1</span></button>
+        <button class="promo-slider__control-item" type="button"><span class="visually-hidden">Показать слайд 2</span></button>
+        <button class="promo-slider__control-item" type="button"><span class="visually-hidden">Показать слайд 3</span></button>
+      </div>
+    </section>
+    <section class="features">
+      <h2 class="visually-hidden">Что мы делаем</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <img src="blob.jpg" alt="Изображение сайта" class="features__item-img" width="300" height="146">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="catalog.html" class="features__item-link">Заказать</a>
+        </li>
+        <li class="features__item">
+          <img src="blob.jpg" alt="Изображение мобильного приложения" class="features__item-img" width="300" height="146">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="catalog.html" class="features__item-link features__item-link--color_green">Заказать</a>
+        </li>
+        <li class="features__item">
+          <img src="blob.jpg" alt="Изображение презентации" class="features__item-img" width="300" height="146">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="catalog.html" class="features__item-link features__item-link--color_yellow">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <section class="info">
+      <h2 class="visually-hidden">Наши услуги и статистика</h2>
+      <p><b class="info__slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+      <p class="info__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
+        как роботы.</p>
+      <h4 class="info__heading">Выполняем заказы на разработку:</h4>
+      <ul class="info__list">
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+      <div class="info__stats">
+        <table class="stats">
+          <caption>Monthly savings</caption>
+          <tr class="stats__numbers-row">
+            <td>146%</td>
+            <td>100%</td>
+            <td>50%</td>
+          </tr>
+          <tr class="stats__txt-row">
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="clients">
+      <h2 class="visually-hidden">Портфолио сделанных работ</h2>
+      <div class="clients__list">
+        <a class="clients__item" href="javascript:void(0);"><img src="blob.jpg" alt="Сайт HTML Academy"></a>
+        <a class="clients__item" href="javascript:void(0);"><img src="blob.jpg" alt="Барбершоп Бородинский"></a>
+        <a class="clients__item" href="javascript:void(0);"><img src="blob.jpg" alt="Приложение Пинк"></a>
+        <a class="clients__item" href="javascript:void(0);"><img src="blob.jpg" alt="Интернет-магазин Мишка"></a>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="contacts__map map">
+        <img class="map__img" src="blob.img" alt="Заглушка для карты">
+        <div class="map__info-card">
+          <b>Nerds Design Studio</b>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="map__info-card-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="map__info-card-email" href="mailto:vlad@kremlin.ru"></a>
+        </div>
+      </div>
+      <form class="contacts__modal email-modal" method="POST" action="#">
+        <h2>Напишите нам</h2>
+        <p class="email-modal__row">
+          <label>
+            Ваше имя:
+            <input id="email-modal-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input id="email-modal-email" type="email" name="email" placeholder="Для отправки ответа">
+          </label>
+        </p>
+        <p class="email-modal__row">
+          <label>
+            Текст письма:
+            <textarea id="email-modal-text" name="text" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button class="email-modal__submit" type="submit">Отправить</button>
+        <button class="email-modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно с формой</span></button>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
-
+    <ul class="main-footer__webrefs webrefs">
+      <li class="webrefs__item">
+        <a href="" class="webrefs__link">
+          <span class="visually-hidden">Ссылка на группу Вконтакте</span>
+          <svg width="26" height="15">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+      <li class="webrefs__item">
+        <a href="" class="webrefs__link">
+          <span class="visually-hidden">Ссылка на группу в Фейсбук</span>
+          <svg width="12" height="22">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+      <li class="webrefs__item">
+        <a href="" class="webrefs__link">
+          <span class="visually-hidden">Ссылка на Инстаграм</span>
+          <svg width="21" height="21">
+            <use></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__txt">
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
   <script src="js/app.min.js"></script>
 </body>
