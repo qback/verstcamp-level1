@@ -1,17 +1,36 @@
-// @font-face {
-//   font-family: "Oswald Regular";
-//   src:
-//     local("oswldregular"),
-//     url("../fonts/oswaldregular.woff2") format("woff2"),
-//     url("../fonts/oswaldregular.woff") format("woff");
-// }
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 
 body {
   margin: 0;
   padding: 0;
   min-width: 320px;
 
-  // font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: @basic-font;
   color: #000000;
   font-style: normal;
 
@@ -56,32 +75,32 @@ img {
   border: 0;
 }
 
-.button {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 12px;
-  width: 100%;
+// .button {
+//   display: block;
+//   padding-top: 10px;
+//   padding-bottom: 12px;
+//   width: 100%;
 
-  color: #ffffff;
+//   color: #ffffff;
 
-  // font-family: "Oswald Regular", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+//   // font-family: "Oswald Regular", "Arial", sans-serif;
+//   font-size: 16px;
+//   line-height: 20px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   text-decoration: none;
 
-  background-color: #68b738;
-  border: none;
+//   background-color: #68b738;
+//   border: none;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  &:hover {
-    background-color: #5eaa2f;
-  }
+//   &:hover {
+//     background-color: #5eaa2f;
+//   }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
-  }
-}
+//   &:active {
+//     color: rgba(255, 255, 255, 0.3);
+//     background-color: #5eaa2f;
+//   }
+// }
