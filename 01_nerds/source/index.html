@@ -14,25 +14,22 @@
     <include src="build/img/sprite.svg"></include>
   </div> -->
   <header class="main-header">
-    <a class="main-logo" href="index.html">
-      <svg>
-        <use></use>
-      </svg>
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--state_active"><a>Студия</a></li>
-        <li class="main-nav__item"><a href="javascript:void(0);">Клиенты</a></li>
-        <li class="main-nav__item"><a href="catalog.html">Магазин</a></li>
-        <li class="main-nav__item"><a href="javascript:void(0);">Контакты</a></li>
-      </ul>
-      <a class="main-nav__basket" href="javascript:void(0);">
-        <svg class="main-nav__basket-icon" width="15" height="15">
-          <use></use>
-        </svg>
-        <span class="main-nav__basket-txt">Корзина</span>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/content/nerds-logo.svg" alt="Логотип компании Nerds" width="160" height="65">
       </a>
-    </nav>
+      <nav class="main-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--state_active"><a class="main-nav__link">Студия</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Клиенты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Магазин</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Контакты</a></li>
+        </ul>
+        <a class="main-nav__basket" href="javascript:void(0);">
+          <span>Корзина</span>
+        </a>
+      </nav>
+    </div>
   </header>
   <main class="main-page">
     <h1 class="visually-hidden">О студии</h1>
